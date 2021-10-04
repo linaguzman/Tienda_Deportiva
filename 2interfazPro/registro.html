@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/flechas.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/9c041df073.js" crossorigin="anonymous"></script>
+
+    
+    <title>Tienda Deportiva</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><img src="img/logotienda.png" alt="Logo" class="logo"></li>
+            <li>
+                <button class="button secundaryButton">Login</button>
+            </li>
+            <li>
+                <button class="button mainbutton">Usuario</button>
+            </li>
+            <li>
+                <div class="buscar">
+                    <input placeholder="Buscar"/>
+                    <i class="fas fa-search button iconobusqueda"></i>
+                </div>                
+            </li>
+            <li>
+                <button class="button secundaryButton">Ventas</button>
+            </li>
+            
+            <li>
+                <button class="button mainbutton">Productos</button>
+            </li>
+        </ul>
+    </header>
+    <table id="listaproductos" class="table">
+        <thead>
+            <tr>
+              <th class="th">codigo del producto</th>
+              <th class="th">Descripcion</th>
+              <th class="th">Valor Unitario</th>
+              <th class="th">Estado</th>
+                            
+            </tr>
+            <tr>
+             
+               <td class="td"id="codigo">2344</td>
+               <td class="td"id="descripcion">camisa</td>
+               <td class="td"id ="valor unitario">$50.000</td>
+               <td class="td"id ="Estado">disponible</td>
+               
+                            
+         
+            </tr>
+            <tr>
+             
+                <td class="td"id="codigo">4335</td>
+                <td class="td"id="descripcion">pantalon</td>
+                <td class="td"id ="valor unitario">$100.000</td>
+                <td class="td"id ="Estado">no disponible</td>
+                
+                                     
+          
+             </tr>
+             <tr>
+             
+                <td class="td"id="codigo">5432</td>
+                <td class="td"id="descripcion">camisa</td>
+                <td class="td"id ="valor unitario">$80.000</td>
+                <td class="td"id ="Estado">disponible</td>
+                                                       
+          
+             </tr>
+             <tr>
+                <td class="td"id="codigo">4562</td>
+                <td class="td"id="descripcion">pantalon</td>
+                <td class="td"id ="valor unitario">$180.000</td>
+                <td class="td"id ="Estado">no disponible</td>
+     
+             </tr>
+
+             
+
+        </thead>
+        <div class="form_action--button">
+            <input type="button" onclick = registrar() value="Buscar" class="boton" />
+                        
+            <input type="button" onclick="reset()" value="Editar" class="boton1">
+            <input type="button" onclick="reset()" value="Actualizar" class="boton2">
+            
+        </div>
+    </table>
+    <br><br><br><br><br><br><br>
+           
+    
+       
+    <footer class="footer">
+       
+        <h6 class="h6">copyright © 2021 Tecnology</h6>
+        <div class="social">
+            <a href="#"><img src="img/logo1.png" alt="logo" ></a>
+            <ul >
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagran</li>
+            </ul>
+                        
+        </div>
+        
+    </footer>
+
+    
+</body>
+</html>
