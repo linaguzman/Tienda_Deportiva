@@ -1,0 +1,124 @@
+###
+///productos
+
+POST http://localhost:9000/api/productos HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "codigo": "123458",
+    "nombre":"sudadera puma ",
+    "precio":"100000",
+    "disponible": "si"
+}
+
+###
+GET http://localhost:9000/api/productos HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/productos/616e2e77533280acc6380f5a HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/productos/616e34514d6029867e177549 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "codigo": "123458",
+    "nombre":"camiseta puma ",
+    "precio":"150000",
+    "disponible": "si"
+}
+
+###
+DELETE  http://localhost:9000/api/productos/616e2e77533280acc6380f5a HTTP/1.1
+
+###
+/// usuarios
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "idusuario": "1235",
+    "nombres": "Lina",
+    "Apellidos":"Guzman Cano",
+    "correo": "linamaria1282@gmail.com",
+    "rol": "vendedora",
+    "Est_solicitud": "activo"   
+    
+   
+}
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###
+///un usuario
+GET http://localhost:9000/api/usuarios/ HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/usuarios/616f2f71c475c28323400c2d HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "idusuario": "1235",
+    "nombres": "Lina",
+    "Apellidos":"Guzman Cano",
+    "correo": "linamaria1282@gmail.com",
+    "rol": "vendedora",
+    "Est_solicitud": "activo"   
+  
+}
+
+###
+DELETE  http://localhost:9000/api/usuarios/616f32d0c475c28323400c30 HTTP/1.1
+
+
+###
+/// ventas
+POST http://localhost:9000/api/ventas HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "cod_venta": "",
+    "valor_venta": "",
+    "id_producto":"",
+    "cantidad": "",
+    "precio": "",
+    "fecha_venta": "", 
+    "doc_cliente": "" , 
+    "vendedor": "",
+    "estado:": ""  
+     
+      
+}
+###
+GET http://localhost:9000/api/ventas HTTP/1.1
+
+###
+///un usuario
+GET http://localhost:9000/api/ventas/ HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/ventas HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "cod_venta": "",
+    "valor_venta": "",
+    "id_producto":"",
+    "cantidad": "",
+    "precio": "",
+    "fecha_venta": "", 
+    "doc_cliente": "" , 
+    "vendedor": "",
+    "estado:": ""  
+      
+}
+
+###
+DELETE  http://localhost:9000/api/ventas HTTP/1.1
