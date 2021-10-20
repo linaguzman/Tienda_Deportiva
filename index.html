@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><i class="fas fa-dog"></i>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro" rel="stylesheet">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="1062176196992-1b403cldkrck8tg2vqs57htuc4eptlrb.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="divlogo"> 
+            <img src="tecno.png" alt="">
+           <div class="divinternologo"><h1>Welcome</h1></div>
+            
+            <div class="divinternopiedepagina">
+                <p ></p>
+            </div>
+
+        </div>
+
+        <div class="divlogin">
+            <h1>Bienvenido <br> a tu plataforma de ventas</h1>
+            <p>Ingresa tus datos.</p>
+            <form>
+                <label for="username"> Usuario</label><br>
+                <input type="text" class="label" placeholder="Enter Username"> <br>
+                <label for="password">Contraseña</label> <br>
+                <input type="password" class="label" placeholder="Enter Password"> <br>
+                <input class="botonlogin" type="submit" value="Ingresar"> <br>
+                <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+            </form>
+            <br></br>
+            <span class="auth">Olvidó su contraseña? &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span><span class="auth">Registrarme</span>
+            <div id="g_id_onload"
+                data-client_id="1062176196992-1b403cldkrck8tg2vqs57htuc4eptlrb.apps.googleusercontent.com"
+                data-ux_mode="redirect"
+                data-login_uri="https://www.example.com/your_login_endpoint">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>
